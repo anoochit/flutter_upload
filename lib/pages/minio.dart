@@ -1,5 +1,4 @@
 import 'dart:developer';
-import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_upload/services/minio.dart';
@@ -19,7 +18,7 @@ class _MinioHomePageState extends State<MinioHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("S3 file upload"),
+        title: const Text("S3 file upload"),
       ),
       body: Center(
         child: Column(
@@ -33,7 +32,7 @@ class _MinioHomePageState extends State<MinioHomePage> {
                       width: 200,
                       height: 200,
                       fit: BoxFit.cover,
-                      errorBuilder: (context, error, stackTrace) => Icon(Icons.error),
+                      errorBuilder: (context, error, stackTrace) => const Icon(Icons.error),
                     ),
                   )
                 : ClipOval(

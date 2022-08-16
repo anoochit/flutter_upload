@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_upload/pages/firebase.dart';
 import 'package:flutter_upload/pages/minio.dart';
 import 'package:flutter_upload/pages/strapi.dart';
 
@@ -21,7 +22,7 @@ class HomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => StrapiHomePage(),
+                    builder: (context) => const StrapiHomePage(),
                   ),
                 );
               },
@@ -34,7 +35,7 @@ class HomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => MinioHomePage(),
+                    builder: (context) => const MinioHomePage(),
                   ),
                 );
               },
@@ -43,7 +44,13 @@ class HomePage extends StatelessWidget {
 
             // cloud storage
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => FirebaseHomePage(),
+                    ));
+              },
               child: const Text("Firebase Cloud Storage"),
             ),
           ],

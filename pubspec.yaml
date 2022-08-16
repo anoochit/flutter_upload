@@ -33,6 +33,7 @@ dependencies:
   firebase_storage: ^10.3.5
   flutter:
     sdk: flutter
+  flutterfire_ui: ^0.4.3+5
   http: ^0.13.5
   image_picker: ^0.8.5+3
   minio: ^3.5.0

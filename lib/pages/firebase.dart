@@ -1,25 +1,24 @@
 import 'dart:developer';
-import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_upload/services/minio.dart';
+import 'package:flutter_upload/services/cloudstorage.dart';
 import 'package:image_picker/image_picker.dart';
 
-class MinioHomePage extends StatefulWidget {
-  const MinioHomePage({Key? key}) : super(key: key);
+class FirebaseHomePage extends StatefulWidget {
+  const FirebaseHomePage({Key? key}) : super(key: key);
 
   @override
-  State<MinioHomePage> createState() => _MinioHomePageState();
+  State<FirebaseHomePage> createState() => _FirebaseHomePageState();
 }
 
-class _MinioHomePageState extends State<MinioHomePage> {
+class _FirebaseHomePageState extends State<FirebaseHomePage> {
   String? filePath;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Cloud Storage upload"),
+        title: const Text("Cloud Storage upload"),
       ),
       body: Center(
         child: Column(
@@ -33,7 +32,7 @@ class _MinioHomePageState extends State<MinioHomePage> {
                       width: 200,
                       height: 200,
                       fit: BoxFit.cover,
-                      errorBuilder: (context, error, stackTrace) => Icon(Icons.error),
+                      errorBuilder: (context, error, stackTrace) => const Icon(Icons.error),
                     ),
                   )
                 : ClipOval(
@@ -52,6 +51,12 @@ class _MinioHomePageState extends State<MinioHomePage> {
 
                 if (file != null) {
                   log('image path : ${file.path}');
+                  CloudStorageService cloudStorageService = CloudStorageService();
+                  final url = await cloudStorageService.uploadFile(selectedImage: file);
+
+                  setState(() {
+                    filePath = url;
+                  });
                 }
               },
               child: const Text("Browse..."),

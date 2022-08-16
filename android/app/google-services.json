@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "651605535947",
+    "project_id": "workshop-666c4",
+    "storage_bucket": "workshop-666c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651605535947:android:6ffac2882fca829f683f4e",
+        "android_client_info": {
+          "package_name": "com.example.flutter_upload"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651605535947-evgc1bacpol37jtd33rqru4v1sv6ige7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0xDslET_kJesaea1TnmnnNkbpt94QE7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651605535947-evgc1bacpol37jtd33rqru4v1sv6ige7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "651605535947-4jmohkj2vt4lrbcdvs8spj10rkjk8fo8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pinkybink.console"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651605535947:android:b3542a80d1dcd765683f4e",
+        "android_client_info": {
+          "package_name": "net.redlinesoft.flutter_firebase_boilerplate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651605535947-evgc1bacpol37jtd33rqru4v1sv6ige7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0xDslET_kJesaea1TnmnnNkbpt94QE7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651605535947-evgc1bacpol37jtd33rqru4v1sv6ige7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "651605535947-4jmohkj2vt4lrbcdvs8spj10rkjk8fo8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pinkybink.console"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
